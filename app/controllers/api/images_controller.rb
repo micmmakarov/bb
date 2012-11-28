@@ -1,15 +1,16 @@
-class ImagesController < ApplicationController
-
+class Api::ImagesController < ApplicationController
   respond_to :json
   # GET /images
   # GET /images.json
   def index
     @images = Image.all
+
     render json: @images
   end
 
   def show
     @image = Image.find(params[:id])
+
     render json: @image
   end
 
@@ -28,5 +29,4 @@ class ImagesController < ApplicationController
     @image.destroy
     render json: @image
   end
-
 end

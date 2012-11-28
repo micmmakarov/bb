@@ -15,17 +15,20 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer'#, :platforms => :ruby
-  gem 'execjs'
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'hamlbars'
+  gem 'handlebars_assets'
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
 gem 'backbone-on-rails'
+gem 'haml-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'rb-readline'
+
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 

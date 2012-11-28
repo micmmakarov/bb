@@ -1,0 +1,7 @@
+%h1 Images view
+
+%h2 Got a startup idea? Write it here:
+%input#new-idea{:type => 'text', :name => 'title'}
+%a#submit{:href => '#{submit}'} Submit this idea
+
+#images

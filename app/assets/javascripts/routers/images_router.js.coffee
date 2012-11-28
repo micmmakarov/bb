@@ -1,13 +1,13 @@
-class Bb.Routers.Images extends Backbone.Router
+class Bb1.Routers.Images extends Backbone.Router
   routes:
-    ''        : 'index'
-    'show/:id': 'show'
-
-  index: ->
-    alert "hello from index!"
-
-  show: (id) ->
-    alert "The id is #{id}"
+    ''    :'index'
+    'show/:id':'show'
 
   initialize: ->
-    @collection = new Bb.Collections.Images()
+    @collection = new Bb1.Collections.Images()
+    @collection.fetch()
+
+  index: ->
+    view = new Bb1.Views.Images({el:'#main', collection: @collection})
+
+  show: (id) ->

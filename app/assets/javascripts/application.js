@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
-//= require bb
+//= require handlebars.runtime
+//= require bb1
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections

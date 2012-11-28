@@ -1,0 +1,4 @@
+%h5 Idea:{{title}}
+%h5 Likes: {{likes}}
+%a.hilarious{:href => '#'} This is hilarious!
+%img{:src => 'http://upload.wikimedia.org/wikipedia/en/thumb/9/96/CGIYoda.jpg/200px-CGIYoda.jpg'}

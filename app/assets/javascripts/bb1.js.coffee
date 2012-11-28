@@ -1,11 +1,12 @@
-window.Bb =
+window.Bb1 =
   Models: {}
   Collections: {}
   Views: {}
   Routers: {}
   initialize: ->
-    new Bb.Routers.Images()
+    new Bb1.Routers.Images()
     Backbone.history.start({pushState: true})
 
+
 $(document).ready ->
-  Bb.initialize()
+  Bb1.initialize()

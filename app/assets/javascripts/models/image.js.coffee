@@ -1,1 +1,1 @@
-class Bb.Models.Image extends Backbone.Model
+class  Bb1.Models.Image extends Backbone.Model
