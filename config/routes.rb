@@ -4,9 +4,9 @@ Bb::Application.routes.draw do
     resources :images
   end
 
-  get "home/index"
   root :to => 'home#index'
 
+  match '*path' => 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

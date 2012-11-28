@@ -5,7 +5,7 @@ window.Bb =
   Routers: {}
   initialize: ->
     new Bb.Routers.Images()
-    Backbone.history.start()
+    Backbone.history.start({pushState: true})
 
 $(document).ready ->
   Bb.initialize()
